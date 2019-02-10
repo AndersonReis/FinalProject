@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastramento"
+        android:textSize="23dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_green_dark"/>
+
+    <EditText
+        android:id="@+id/edtnome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="41dp"
+        android:hint="Nome Completo"
+        />
+
+    <EditText
+        android:id="@+id/edtcpf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/edtnome"
+        android:hint="CPF" />
+
+    <EditText
+
+
+        android:id="@+id/edtidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/edtcpf"
+        android:hint="Idade" />
+
+    <EditText
+        android:id="@+id/edttelefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/edtidade"
+        android:hint="Telefone" />
+
+    <EditText
+        android:id="@+id/edtemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/edttelefone"
+        android:hint="Email" />
+
+    <Button
+        android:id="@+id/btinserir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btlistar"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="255dp"
+        android:gravity="center
+"
+        android:text="Inserir no Banco de Dados" />
+
+    <Button
+        android:id="@+id/btlistar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="206dp"
+        android:gravity="center"
+        android:text="Listar conteúdo Banco de Dados" />
+
+    <Button
+        android:id="@+id/btvoltar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="504dp"
+        android:text="Voltar Tela anterior" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="Desenvolvido por Anderson Cardoso - Versão 1.00"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/btdelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btvoltar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="-141dp"
+        android:text="Delete Todo Banco de Dados" />
+
+
+</RelativeLayout>
